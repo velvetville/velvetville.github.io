@@ -20,7 +20,7 @@ function setup() {
     color("#ffa7bf"),
     color("#ff618b"),
   ];
-  print('press S to save your stitch pattern');
+  noLoop();
 }
 
 
@@ -65,10 +65,11 @@ function pixel(column, row, value) {
 
 
 function keyPressed(){
-  if(key === 's'){
-    save('drawing.png');
-  if(key === 'r'){
-    redraw(); }
+ if (event.code === 'KeyS') { 
+    saveCanvas("drawing.png");
+    
+  } else if (event.code === 'KeyR') {
+    redraw();
   }
 }
 
