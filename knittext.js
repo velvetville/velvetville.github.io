@@ -14,7 +14,7 @@ let myFont;
 let button;
 
 function preload() {
-  myFont = loadFont("assets/Quinquefive-ALoRM.ttf");
+  myFont = loadFont("Quinquefive-ALoRM.ttf");
 }
 
 function setup() {
